@@ -1,0 +1,69 @@
+﻿@using CapaNegocio
+@model Cliente
+
+@{
+    ViewData["Title"] = "CrearNuevo";
+    Cliente cli1 = new Cliente { UserName = "usuprueba" };
+}
+
+<h1>Crear Nuevo Cliente</h1>
+
+@*@Html.PartialAsync("_Mensaje")*@
+
+<partial name="_Mensaje" for="@cli1"  />
+
+
+@*@section footerPersonalizado
+{
+    <div>
+       
+        <partial name="_Mensaje" />
+    </div>
+}*@
+
+
+<form asp-action="CrearNuevo" asp-controller="Cliente" method="post">
+
+    <div class="form-group">
+        <label asp-for="RazonSocial" class="control-label"></label>
+        <input asp-for="RazonSocial" class="form-control" />
+        <span asp-validation-for="RazonSocial" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EdadCIO" class="control-label"></label>
+        <input asp-for="EdadCIO" class="form-control" />
+        <span asp-validation-for="EdadCIO" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ConfirmEmail" class="control-label"></label>
+        <input asp-for="ConfirmEmail" class="form-control" />
+        <span asp-validation-for="ConfirmEmail" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UserName" class="control-label"></label>
+        <input asp-for="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+
+    <div asp-validation-summary="All" class="text-danger" ></div>
+
+    <div class="form-group">
+        <input type="submit" value="Grabar" class="btn btn-primary" />
+    </div>
+</form>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+
+}
+

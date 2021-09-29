@@ -1,0 +1,68 @@
+﻿@model APPWebLayoutPartialVal.Models.ClientesEmpleadoViewModel
+
+@{
+    Layout = "_MyLayoutBlue";
+    string mensaje = ViewData["Mensaje"].ToString();
+
+    string nom = ViewBag.Nombre;
+
+    int edad = ViewBag.Edad;
+
+    //Evitar hacer esto, mejor ViewModel.
+    //CapaNegocio.Empleado em = ViewBag.Empleado;
+
+    string codigo = ViewData["Codigo"].ToString();
+}
+
+<h1>@mensaje</h1>
+
+<h2>@codigo</h2>
+
+<h3>@edad</h3>
+
+
+<hr />
+
+@*@Html.Partial("_Mensaje")*@
+
+<h1>Esta es mi Vista Clientes Index</h1>
+
+<table>
+    <tr>
+        <th>Razon Social</th>
+        <th>Edad Cio</th>
+    </tr>
+    @foreach (var cli in Model.Clientes)
+    {
+        <tr>
+            <td>@cli.RazonSocial</td>
+            <td>@cli.EdadCIO</td>
+        </tr>
+        <tr>
+            <td>
+                <partial name="_Mensaje" for="@cli" />
+            </td>
+
+        </tr>
+    }
+
+    @*@for (int x=0; x < 10; x++)
+        {
+            <partial name="_Mensaje" model="Model" />
+        }*@
+</table>
+
+<br />
+<br />
+
+<br />
+<br />
+<br />
+@*<partial name="_Mensaje" />*@
+
+@section footerPersonalizado
+{
+    <div>---------------------------------------------</div>
+    <div>Aca pongo todo el diseño que yo quiera darle al footer personalizado</div>
+    <div>---------------------------------------------</div>
+}
