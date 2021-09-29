@@ -1,0 +1,11 @@
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\bin\Debug\net5.0\CapaNegocio.deps.json
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\bin\Debug\net5.0\CapaNegocio.dll
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\bin\Debug\net5.0\ref\CapaNegocio.dll
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\bin\Debug\net5.0\CapaNegocio.pdb
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\obj\Debug\net5.0\CapaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\obj\Debug\net5.0\CapaNegocio.AssemblyInfoInputs.cache
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\obj\Debug\net5.0\CapaNegocio.AssemblyInfo.cs
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\obj\Debug\net5.0\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\obj\Debug\net5.0\CapaNegocio.dll
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\obj\Debug\net5.0\ref\CapaNegocio.dll
+C:\Users\MarianoDomingoJuiz\source\repos\CapaNegocio\obj\Debug\net5.0\CapaNegocio.pdb
